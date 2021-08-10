@@ -1,0 +1,84 @@
+/************** QA **************/
+.qa{
+	margin-top: 50px;
+	margin-left: 80px;
+	float: left;
+}
+
+/* ----- QUESTION ----- */
+.question {
+	width:  800px;
+	height: 400px;
+	border: 1px solid grey;
+	border-radius: 10px;
+}
+
+
+.header-QA{
+	margin-top: 40px;
+	font-weight: bold;
+}
+
+.textBox{
+	width: 400px;
+	height: 25px;
+}
+
+.txt-sub{
+	width: 200px;
+	height: 25px;
+}
+
+.select-box {
+    height: 25px;
+    border-radius: 10px;
+}
+
+/* ----- ANSWER -----  */
+.answer {
+	width:  800px;
+	height: 400px;
+	border: 1px solid grey;
+	border-radius: 10px;
+	text-align: 50px;
+}
+
+.btn-insert{
+	font-size: 12px;
+    height: 20px;
+    width: 30px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.tableAnswer {
+	
+}
+
+
+.btn-1 {
+    font-size: 14px;
+    height: 30px;
+    width: 100px;
+    transition-duration: 0.4s;
+    font-weight: bold;
+}
+
+/************** ALL QUESTION **************/
+.all-question{
+	margin-top: 30px;
+	margin-right: 80px;
+	width:  800px;
+	height: 840px;
+	border: 1px solid grey;
+	border-radius: 10px;
+	float: right;
+}
+
+.btn-2 {
+    font-size: 13px;
+    height: 25px;
+    width: 80px;
+    transition-duration: 0.4s;
+    font-weight: bold;
+}

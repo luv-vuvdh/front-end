@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>QA</title>
+	<link rel="stylesheet" href="style.css">
+	<script language="javascript" src="funct.js"></script>
+</head>
+<body>
+	<div>
+		<form action="MH01_submit" method="get" accept-charset="utf-8">
+
+			<!-- QUESTION -->
+			<div class="qa">
+				<div class="question">
+				<!-- Header Question-->
+				<div class="header-QA">
+					<center>
+						<p class = ""> QUESTION</p>
+					</center>
+				</div>
+
+				<!-- Body Question-->
+				<div>
+					<table width="800px" cellspacing="6" cellpadding="4" id="tbl-question">
+						<tr>
+							<td><b>question</b></td>
+							<td>
+								<input type="text" name="question" class="textBox">
+							</td>
+						</tr>
+
+						<tr>
+							<td><b>group</b></td>
+							<td>
+								<input type="radio" name="group" checked="checked" onchange="showHideGroup()"> Select group
+							</td>
+						</tr>
+						<tr id="exist-group">
+							<td></td>
+							<td>
+								<select class="select-box">
+									<option> Group name 1</option>
+									<option> Group name 2</option>
+									<option> Group name 3</option>
+									<option> Group name 4</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							
+						</tr>
+
+						<!-- Add new group-->
+						<tr>
+							<td></td>
+							<td>
+								<input type="radio" name="group" onchange="showHideGroup()"> Add new group
+							</td>
+						</tr>
+						<tr id = "new-group" style="display: none">
+							<td></td>
+							<td>
+								<table width ="500px" cellspacing="6" cellpadding="4" id="tbl-new-group" class="new-group">
+									<tr>
+										<td>Group name</td>
+										<td>
+											<input type="text" name="groupName" class="txt-sub">
+										</td>										
+									</tr>
+
+									<tr>
+										<td>Content</td>
+										<td>
+											<input type="text" name="content" class="txt-sub">
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+
+						<tr>
+							<td><b>is active</b></td>
+							<td>
+								<input type="checkbox" name="isActive">
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+
+			<br><br>
+
+			<!-- ANSWER -->
+			<div class="answer">
+				<!-- Header Answer-->
+				<div class="header-QA">
+					<center>
+						<p class = ""> ANSWER</p>
+					</center>
+				</div>
+
+				<!-- Body Answer-->
+				<div>
+					<table width="800px" cellspacing="4" cellpadding="2" class="tableAnswer" id="tableAnswer">
+						<tr>
+							<td>Answer 1</td>
+							<td>
+								<input type="text" name="question" class="textBox">
+							</td>
+							<td>
+								<input type="radio" name="correct">
+							</td>
+						</tr>
+						<tr>
+							<td>Answer 2</td>
+							<td>
+								<input type="text" name="question" class="textBox">
+							</td>
+							<td>
+								<input type="radio" name="correct">
+							</td>
+						</tr>
+						<tr>
+							<td>Answer 3</td>
+							<td>
+								<input type="text" name="question" class="textBox">
+							</td>
+							<td>
+								<input type="radio" name="correct">
+							</td>
+						</tr>						
+					</table>
+				</div> <br>
+
+				<!-- Insert/Delete new row-->
+				<div>
+					<center>
+						<input type="button" value="+" class="btn-insert" onclick="createNewRow()">&emsp;
+						<input type="button" value="-" class="btn-insert" onclick="deleteNewRow()">
+					</center>
+					
+				</div> <br><br>
+
+				<!-- Button Answer -->
+				<div>
+					<center>
+						<input type="submit" value="Add" class="btn-1">&emsp;&emsp;
+						<input type="submit" value="Update" class="btn-1">
+					</center>					
+				</div>
+			</div>
+			</div>
+			<br>
+
+			<!-- ALL QUESION IN GROUP--->
+			<div class="all-question">
+				
+				<table  width="700px" cellspacing="4" cellpadding="2">
+					<tr>
+						<td>1.</td>
+						<td>Question 1</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Answer a</td>
+						<td>
+							<input type="button" value="Edit" class="btn-2">
+						</td>
+						<td>
+							<input type="button" value="Delete" class="btn-2">
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Answer b</td>
+						<td>
+							<input type="button" value="Edit" class="btn-2">
+						</td>
+						<td>
+							<input type="button" value="Delete" class="btn-2">
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Answer c</td>
+						<td>
+							<input type="button" value="Edit" class="btn-2">
+						</td>
+						<td>
+							<input type="button" value="Delete" class="btn-2">
+						</td>
+					</tr>
+					<tr>
+						<td>2.</td>
+						<td>Question 2</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Answer a</td>
+						<td>
+							<input type="button" value="Edit" class="btn-2">
+						</td>
+						<td>
+							<input type="button" value="Delete" class="btn-2">
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Answer b</td>
+						<td>
+							<input type="button" value="Edit" class="btn-2">
+						</td>
+						<td>
+							<input type="button" value="Delete" class="btn-2">
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Answer c</td>
+						<td>
+							<input type="button" value="Edit" class="btn-2">
+						</td>
+						<td>
+							<input type="button" value="Delete" class="btn-2">
+						</td>
+					</tr>
+					
+
+				</table>
+			</div>
+
+			
+		</form>
+	</div>
+</body>
+</html>
