@@ -36,7 +36,7 @@ function createNewRow(){
 	element1.type = "text";
 	element1.name = "question";
 	element1.class = "textBox";
-	element1.style.width = "400px";
+	element1.style.width = "500px";
 	element1.style.height = "25px";
 	column2.appendChild(element1);
 
