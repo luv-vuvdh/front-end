@@ -1,8 +1,35 @@
+/**** LEVEL 0 */
+* {
+	margin: 0 auto;
+	padding: 0;
+}
+.header{
+	height: 40px;
+	background-color: #0D6EFD;
+	color: #fff;
+	padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    font-size: 18px;
+}
+
+body{
+	background: #fff;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.export{
+	margin-top: 30px;
+	height: 10px;
+	float: right;
+	margin-right: 80px;
+}
+
 /*** LEVEL 1 */
 /************ CONTAINER **************/
 .container{
-	width: 100%;
-	background-color: green;
+	
 }
 
 /** LEVEL 2 */
@@ -12,6 +39,7 @@
 	margin-top: 80px;
 	margin-left: 80px;
 	float: left;
+	background: #fff;
 }
 
 /* LEVEL 3 */
@@ -21,22 +49,31 @@
 	height: 400px;
 	border: 1px solid grey;
 	border-radius: 10px;
+	border-color: #0D6EFD;
 }
 
 
 .header-Q{
-	margin-top: 40px;
+	height: 25px;
 	font-weight: bold;
+	color: #fff;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background-color: #0D6EFD;
+	padding-top: 8px;
+	padding-bottom: 2px;
 }
 
 .textBox{
 	width: 500px;
 	height: 25px;
+	border-radius: 5px;
 }
 
 .txt-sub{
 	width: 300px;
 	height: 25px;
+	border-radius: 5px;
 }
 
 .select-box {
@@ -52,11 +89,18 @@
 	border: 1px solid grey;
 	border-radius: 10px;
 	text-align: 50px;
+	border-color: #0D6EFD;
 }
 
 .header-A{
-	margin-top: 40px;
+	height: 25px;
 	font-weight: bold;
+	color: #fff;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background-color: #0D6EFD;
+	padding-top: 8px;
+	padding-bottom: 2px;
 }
 
 .btn-insert{
@@ -76,15 +120,18 @@
     font-size: 14px;
     height: 30px;
     width: 100px;
-    transition-duration: 0.4s;
     font-weight: bold;
+    border-radius: 5px;
 }
 
+.answer tr{
+	height: 40px;
+}
 
 /** LEVEL 2 */
 /************** ALL QUESTION **************/
 .list{
-	margin-top: 80px;
+	margin-top: 40px;
 	margin-right: 80px;
 	width:  1000px;
 	height: 840px;
@@ -92,11 +139,11 @@
 	border-radius: 10px;
 	float: right;
 	overflow: auto;
+	background: #fff;
+	border-color: #0D6EFD;
 }
 
 .list-form{
-	margin-top: 40px;
-	margin-left: 20px;
 }
 
 .list-form, tr{
@@ -109,4 +156,14 @@
     width: 80px;
     transition-duration: 0.4s;
     font-weight: bold;
+}
+
+.header-list{
+	height: 25px;
+	font-weight: bold;
+	color: #fff;
+	border-top-left-radius: 10px;
+	background-color: #0D6EFD;
+	padding-top: 8px;
+	padding-bottom: 2px;
 }

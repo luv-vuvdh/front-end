@@ -6,6 +6,12 @@
 	<script language="javascript" src="funct.js"></script>
 </head>
 <body>
+	<div class="header">
+		<h1>Luvina Software JSC</h1>
+	</div>
+	<div class="export">
+		<input type="button" value="Export" class="btn-1">
+	</div>
 	<div class="container">
 		<!---- QA -->
 		<div class="qa">
@@ -14,22 +20,23 @@
 				<div class="question">
 					<div class="header-Q">
 						<center>
-							<p class = ""> QUESTION</p>
+							<p> QUESTION</p>
 						</center>
 					</div>
+					<br>
 
 					<div class="table-Q">
 						<table width="750px" cellspacing="6" cellpadding="4" id="tbl-question"
 						style="margin-left: 15px;">
 							<tr>
-								<td style="width: 150px;"><b>question</b></td>
+								<td style="width: 150px;"><b>Question</b></td>
 								<td>
 									<input type="text" name="question" class="textBox">
 								</td>
 							</tr>
 
 							<tr>
-								<td><b>group</b></td>
+								<td><b>Group</b></td>
 								<td>
 									<input type="radio" name="group" checked="checked" onchange="showHideGroup()"> Select group
 								</td>
@@ -75,7 +82,7 @@
 							</tr>
 
 							<tr>
-								<td><b>is active</b></td>
+								<td><b>Is active</b></td>
 								<td>
 									<input type="checkbox" name="isActive">
 								</td>
@@ -92,6 +99,7 @@
 							<p class = ""> ANSWER</p>
 						</center>
 					</div>
+					<br>
 					<!-- Body Answer-->
 					<div>
 						<table width="750px" cellspacing="4" cellpadding="2" class="tableAnswer" id="tableAnswer" style="margin-left: 15px;">
@@ -154,6 +162,7 @@
 						<p><b>LIST QUESTION OF GROUP NAME 1</b></p>
 					</center>
 				</div>
+				<br>
 				<div class="body-list"  style="margin-bottom: 50px;">
 					<table  width="950px" cellspacing="4" cellpadding="2">
 					<tr>

@@ -39,7 +39,6 @@ function createNewRow(){
 		element1.class = "textBox";
 		element1.style.width = "500px";
 		element1.style.height = "25px";
-		element1.style.fontweight = bold;
 		column2.appendChild(element1);
 
 
